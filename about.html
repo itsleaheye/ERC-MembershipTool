@@ -16,12 +16,13 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles2.css">
 	<link rel="icon" href="img/favicon.png"> <!--Icon in tab-->
+	<!-- To Do Design favicon -->
 	<title>About Us</title>
 </head>
 <body>
 	<header>
 		<div class="nav"> 
-			<img src="img/ErcLogo-White.png" alt="ERC logo"/>
+			<a href="index.html"><img class="logo" src="img/ErcLogo-White.png" alt="ERC logo"/></a>
 			<input type="checkbox" id="nav-check">
 			<label for="nav-check">
 				<span></span>
@@ -31,37 +32,32 @@
 			<ul>
 				<li><a href="index.html">View Events</a></li>
 				<li><a href="index.html">Membership</a></li>
-				<li><a href="index.html">Gallery</a></li>
+				<li><a href="blog.html">Blog</a></li>
 				<li><a class="current" href="about.html">About Us</a></li>
 				<li><a href="Check-in.html">Check In</a></li>
 			</ul>
 		</div>
-		<div class="banner">
-			<!--<img class="fade-in" src="img/logo-personal.jpg" alt="Logo of Leah Nonay"/> 
-			<p class="fade-in" style="margin-bottom:1rem;"><span style="font-weight:bolder">Leah Nonay</span>, a designer and coder.</p> -->
+		<div class="banner main-banner">
 		</div>
 	</header>
 	<main>
 		<div class="row blue bulletin">
-				<h2>Edmonton Rocketry Club</h2>
-				<p>We are a group interested in building and safely flying rockets of all sizes and power classes. We also provide guidance and experience to those wanting to enter the world of high-powered rocketry.</p>
+				<h2 class="highlight-text">What is the ERC?</h2>
+				<p>The Edmonton Rocketry Club (ERC) is an Edmonton club dedicated to the promotion of model rocketry as a hobby!</p>
 			</div>
 		<div class="container">
 			<div class="row">
 				<div class="col blue">
-					<h2>Ready To Launch?</h2>
-					<p>Please enter your ERC ID below</p>
-					<form id="submitOrderForm" method="POST" name="memberIdForm">
-					<span class="form-field">
-						<input type="text" name="memberId" required="true" placeholder="Your Member Id...">
-					</span>
-					<button class="btn btn-primary green" type="submit">
-						<i class="fa fa-rocket icon"></i> Check In
+					<h2 class="highlight-text">What Do We Do?</h2>
+					<p>The ERC holds monthly meetings and endeavors. We also host regular launch sessions as our Canadian weather permits. 
+						<br/><br/><u>Our meetings are free and all ages are welcome!</u> 
+						<br/><br/>Join us and meet other people interested in model rocketry. Also, feel free to join in on our group discussion about anything rocket related, find out about upcoming rocket launches, and even get help with your model rocket builds.</p>
+					<button class="btn btn-primary green">
+						<i class="fa fa-rocket icon"></i> Visit Our Blog
 					</button>
-				</form>
 				</div>
 				<div class="col green">
-					<h2>Meet the Team</h2>
+					<h2><i class="fa fa-users"></i>  Our Founders</h2>
 					<p style="text-align: left;">
 						President: Shawn Eyestone
 						<br/>Vice President: Michael Latta
@@ -72,9 +68,12 @@
 						<span style="font-weight:500;"><br/>Directors Of </span>
 						<br/>&nbsp; High Power Rocketry: Ken Mueller
 						<br/>&nbsp; Model Rocketry: Chris Broadbent
-						
 					</p>
 				</div>
+			</div>
+			<div class="row" style="margin-top: 1.8rem">
+				<p class="dark-text" style="font-size: 0.8rem">We encourage everyone to consider becoming a member of the Canadian Association of Rocketry, as we adhere to their: <a href="https://www.canadianrocketry.org/Model-Rocketry">Model Rocket Safety Code</a>
+				</p>
 			</div>
 		</div>
 	</main>

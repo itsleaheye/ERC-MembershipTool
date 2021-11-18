@@ -14,7 +14,8 @@ h2 {
 	color:#ffffff;
 }
 h3 {
-	font-size: 1.3rem;
+	font-size: 1rem;
+	color: #095169;
 }
 h4 {
 	font-weight: 500 !important;
@@ -75,7 +76,7 @@ h1, h2,  h3,  p,  a {
 	display:inline-block;
 	position: absolute;
 	background-color:#212121;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	list-style: none;
 	top:3.6rem;
 	left: 0px;
@@ -85,6 +86,13 @@ h1, h2,  h3,  p,  a {
 .current {
 	background-color: #A1CE37 !important;
 	color: #f4f4f4 !important;
+}
+.nav .logo {
+	max-width: 120px;
+}
+.nav .logo:hover {
+	opacity: 0.5; 
+	/*test this please leahhhh*/
 }
 /*Ul and Li's have natural padding, you need to reset it*/
 .nav ul,
@@ -125,19 +133,30 @@ h1, h2,  h3,  p,  a {
 
 /*Banners and Bulletins*/
 .banner {
-	background-image: url(../img/banner-home.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	width: 100%;
+	display: block;
+}
+.main-banner {
+	background-image: url(../img/banner-home.jpg);
 	height:12em;
 	padding: 6em 0;
-	display: block;
+}
+.launch-banner {
+	background-image: url(../img/banner-launch-dark.jpg) !important;
+	height: 25em;
+	padding: 1em;
 }
 .bulletin {
 	padding: 2em;
 }
-
+.logo {
+	max-width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
 
 /*Main*/
 .row,
@@ -207,22 +226,15 @@ input[type="text"] {
 	border-radius: 8px;
 	min-width: 160px;
 	color: #f4f4f4;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 0.06em
-}
-.btn-primary {
-	/*background: linear-gradient(to right, #9fd96b 0%, #53ba83 100%);*/
-	
-}
-.btn-secondary {
-	/*background: linear-gradient(to right, #059b9a 0%, #095169 100%);*/
 }
 .btn:hover {
 	cursor: pointer;
 	color:#095169;
 	background-color:#53ba83;
 }
-.collapse-toggle {
+.collapse-toggle .btn {
 	min-width: 35px !important;
 	width: 35px;
 	height: 35px;
@@ -245,6 +257,7 @@ input[type="text"] {
 /*Specialty text traits*/
 .highlight-text {
 	color:#A1CE37;
+	max-width: 80%;
 }
 .dark-text {
 	color: #4A5558;
@@ -253,6 +266,7 @@ input[type="text"] {
 .location-tag {
 	font-style: italic;
 	text-align: left;
+	width: 100%;
 }
 .green p {
 	color: #095169;
@@ -266,22 +280,59 @@ input[type="text"] {
 	text-align: left;
 	font-weight: 400 !important;
 }
+.perk-icon {
+	color: #ffffff;
+	padding: 0.7em; 
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	display: block;
+}
+
 /*card stylings*/
+/*Event Cards*/
 .event-card {
 	background-color: #1B6A85;
 	border-radius: 8px;
 	padding:0.8em;
-	margin-bottom: 0.8rem;
+	margin-bottom: 0.8em;
 	display: flex;
 	flex-wrap: wrap;
 }
 .event-card:last-child {
 	margin-bottom: 0 !important;
 }
-.hidden-details {
+.content {
 	display: none;
-	padding: 0.8rem;
+	padding: 1em 0 0 0.8em;
 }
+/*Membership card*/
+.membership-card {
+	padding: 0.8rem;
+	text-align: center !important; 
+	display: block;
+}
+/*Perks Cards*/
+.perks-card {
+	background-color: #F9F8F8;
+	border-radius: 8px;
+	padding:0.8rem;
+	margin: 0.8rem 0;
+}
+.perks-card .info {
+	width: 100%;
+	margin-top: 0.8rem;
+	display: block;
+}
+.perks-card .info ul {
+	margin-top: -1em;
+	color: #095169;
+}
+.perks-card .info ul li{
+	font-size: 1rem;
+}
+
 /*column stylings*/
 .col {
 	width:100%;

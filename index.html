@@ -16,12 +16,12 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles2.css">
 	<link rel="icon" href="img/favicon.png"> <!--Icon in tab-->
-	<title>Edmonton Rocketry Club - Membership Tool</title>
+	<title>Edmonton Rocketry Club</title>
 </head>
 <body>
 	<header>
 		<div class="nav"> 
-			<img src="img/ErcLogo-White.png" alt="ERC logo"/>
+			<a href="index.html"><img class="logo" src="img/ErcLogo-White.png" alt="ERC logo"/></a>
 			<input type="checkbox" id="nav-check">
 			<label for="nav-check">
 				<span></span>
@@ -30,20 +30,20 @@
 			</label>
 			<ul>
 				<li><a class="current" href="index.html">View Events</a></li>
-				<li><a href="index.html">Membership</a></li>
-				<li><a href="index.html">Gallery</a></li>
+				<li><a href="membership.html">Membership</a></li>
+				<li><a href="blog.html">Blog</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="check-in.html">Check In</a></li>
 			</ul>
 		</div>
-		<div class="banner">
+		<div class="banner main-banner">
 		</div>
 	</header>
 	<main>
 		<div class="row blue bulletin">
 			<h2>Your Local Rocketry Group</h2>
 			<p>We are an Edmonton based club that builds and flies model rockets, and we host several annual events.</p>
-			<button class="btn btn-primary green">Learn More</button>
+			<a class="btn btn-primary green" href="membership.html">Learn More</a>
 		</div>
 		<div class="container">
 			<div class="row">
@@ -54,12 +54,12 @@
 					<div class="event-card">
 						<div class="info-col">
 							<h4>Model Rocket Launch Is A GO!</h4>
-							<p class="location-tag">November 5, 2021 @ 12:00-16:00</p>
+							<p class="location-tag">November 5 @ 12:00-16:00</p>
 						</div>
-						<div class="action-col">
-							<button class="btn collapse-toggle"><i class="fa fa-chevron-down"></i></button>
+						<div class="action-col collapse-toggle">
+							<button class="btn"><i class="fa fa-chevron-down"></i></button>
 						</div>
-						<div class="hidden-details">
+						<div class="content">
 							<p class="details">This meeting is free and all ages are welcome!
 								<br/><br/>  Join us and meet other people interested in model rocketry. Join in our group discussions about anything rocket related. Find out about upcoming rocket launches and other events, and even get help with your model rocket builds. 
 								<br/>This meeting will include a "Show & Tell". We ask those that want to participate to show us your rockets over Zoom video, and share what you are building or have built.
@@ -69,11 +69,18 @@
 					</div>
 					<div class="event-card">
 						<div class="info-col">
-							<h4>Model Rocket Launch Is A GO!</h4>
-							<p class="location-tag">November 5, 2021 @ 12:00-16:00</p>
+							<h4>Monthly Meeting</h4>
+							<p class="location-tag">November 13 @ 12:00-16:00</p>
 						</div>
-						<div class="action-col">
-							<button class="btn collapse-toggle"><i class="fa fa-chevron-down"></i></button>
+						<div class="action-col collapse-toggle">
+							<button class="btn"><i class="fa fa-chevron-down"></i></button>
+						</div>
+						<div class="content">
+							<p class="details">This meeting is free and all ages are welcome!
+								<br/><br/>  Join us and meet other people interested in model rocketry. Join in our group discussions about anything rocket related. Find out about upcoming rocket launches and other events, and even get help with your model rocket builds. 
+								<br/>This meeting will include a "Show & Tell". We ask those that want to participate to show us your rockets over Zoom video, and share what you are building or have built.
+								<br/><br/>
+							**We will post the Zoom meeting link closer to the meeting date!**</p>
 						</div>
 					</div>
 				</div>
@@ -84,24 +91,15 @@
 							<h4>Model Rocket Launch Is A GO!</h4>
 							<p class="location-tag">November 5, 2021 @ 12:00-16:00</p>
 						</div>
-						<div class="action-col">
-							<button class="btn collapse-toggle"><i class="fa fa-chevron-down"></i></button>
+						<div class="action-col collapse-toggle">
+							<button class="btn"><i class="fa fa-chevron-down"></i></button>
 						</div>
-						<div class="hidden-details">
+						<div class="content">
 							<p class="details">This meeting is free and all ages are welcome!
 								<br/><br/>  Join us and meet other people interested in model rocketry. Join in our group discussions about anything rocket related. Find out about upcoming rocket launches and other events, and even get help with your model rocket builds. 
 								<br/>This meeting will include a "Show & Tell". We ask those that want to participate to show us your rockets over Zoom video, and share what you are building or have built.
 								<br/><br/>
 							**We will post the Zoom meeting link closer to the meeting date!**</p>
-						</div>
-					</div>
-					<div class="event-card">
-						<div class="info-col">
-							<h4>Model Rocket Launch Is A GO!</h4>
-							<p class="location-tag">November 5, 2021 @ 12:00-16:00</p>
-						</div>
-						<div class="action-col">
-							<button class="btn collapse-toggle"><i class="fa fa-chevron-down"></i></button>
 						</div>
 					</div>
 				</div>
@@ -118,8 +116,25 @@
 	</footer>
 
 	<!-- JS Scripts -->
-	<!-- Loading hidden details -->
 	<script>
+		var eventCard = document.getElementsByClassName("collapse-toggle");
+		var i;
+
+		for (i = 0; i < eventCard.length; i++) {
+			eventCard[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "none") {
+				  content.style.display = "block";
+				} else {
+				  content.style.display = "none";
+				}
+				}
+			);
+		}
 	</script>
+	<!-- Loading hidden details -->
+	<!-- <script>
+	</script> -->
 </body>
 </html>
