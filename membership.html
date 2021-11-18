@@ -48,7 +48,7 @@
 				<h2 class="highlight-text">Why join the <br/>Edmonton Rocketry Club?</h2>
 				<p class="dark-text">We offer our members some really cool perks! Take a look below, at some of the awesome things that come with joining the ERC.</p>
 				<button class="btn btn-secondary blue">
-					<i class="fa fa-user-plus icon"></i> Take Me To The Form 
+					<i class="fa fa-user-plus icon"></i> View Application 
 				</button>
 				<!-- Add JS to make this scroll to the bottom -->
 			</div>
@@ -125,42 +125,15 @@
 					</div>
 					<p style="margin-top: 0.8rem">Please click the button below to download our application form. Once completed, please email the form back to: <a style="color: #8EB92B; font-weight: 500" href="mailto:erc@edmontonrocketry.net"> our staff here</a></p>
 					<!-- To Do in the future, create an online form that submits to whatever provider you have chosen -->
-					<button class="btn green">
+					<a class="btn green" href="https://drive.google.com/file/d/1MH6ZkeS0ewM_ellMKI95u577h292VLlD/view">
 						<i class="fa fa-download"></i> View Form
-					</button>
+					</a>
 					<br/>
 					
 				</div>
 	</main>
 	<footer class="green">
-		<ul class="footer-icons">
-			<li><a href="https://www.casualpancakes.com"><img src="img/icon-fiverr.png" alt="Art icon"/></a></li>
-			<li><a href="https://github.com/leahnonay"><img src="img/icon-github.png" alt="Github icon"/></a></li>
-			<li><a href="https://www.linkedin.com/in/leahnonay/"><img src="img/icon-linkedin.png" alt="Linkedin icon"/></a></li>
-			<li><a href="mailto:leahnonay@gmail.com"><img src="img/icon-email.png" alt="Email icon"/></a></li>
-		</ul>
+		<a href="https://www.facebook.com/EdmontonRocketryClub/"><i class="fab fa-facebook fa-4x" style="color:#fff"></i></a>
 	</footer>
-
-	<!-- JS Scripts -->
-	<script>
-		var eventCard = document.getElementsByClassName("collapse-toggle");
-		var i;
-
-		for (i = 0; i < eventCard.length; i++) {
-			eventCard[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var content = this.nextElementSibling;
-				if (content.style.display === "none") {
-					content.style.display = "block";
-				} else {
-					content.style.display = "none";
-				}
-			}
-			);
-		}
-	</script>
-	<!-- Loading hidden details -->
-	<!-- <script>
-	</script> -->
 </body>
 </html>
