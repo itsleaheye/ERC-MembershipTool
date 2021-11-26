@@ -1,139 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Site Descriptors -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A membership tool developed for the ERC" />
-	<!-- Font imports -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-	<!-- Icon Import -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- <script src="js/html5shiv.js"></script> -->
-	<!-- Style imports -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles2.css">
-	<link rel="icon" href="img/favicon.png"> <!--Icon in tab-->
-	<title>Membership Info & Sign Up</title>
-</head>
-<body>
-	<header>
-		<div class="nav"> 
-			<a href="index.html"><img class="logo" src="img/ErcLogo-White.png" alt="ERC logo"/></a>
-			<input type="checkbox" id="nav-check">
-			<label for="nav-check">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
-			<ul>
-				<li><a href="index.html">View Events</a></li>
-				<li><a class="current" href="membership.html">Membership</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="check-in.html">Check In</a></li>
-			</ul>
-		</div>
-		<div class="banner launch-banner">
-			<img class="logo" src="img/ErcLogo-White.png" alt="ERC logo"/>
-			<p>Interested in flying model rockets with us? 
-			Take a look at what it takes to become an ERC member</p>
-		</div>
-	</header>
-	<main>
-		<div class="container">
-			<div class="row">
-				<h2 class="highlight-text">Why join the <br/>Edmonton Rocketry Club?</h2>
-				<p class="dark-text">We offer our members some really cool perks! Take a look below, at some of the awesome things that come with joining the ERC.</p>
-				<button class="btn btn-secondary blue">
-					<i class="fa fa-user-plus icon"></i> View Application 
-				</button>
-				<!-- Add JS to make this scroll to the bottom -->
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="perks-card">
-						<!-- Fix this astronaut icon -->
-						<i class="fa fa-user-astronaut perk-icon green fa-3x"></i>
-						<span class="info">
-							<h3>Attend</h3>
-							<ul>
-								<li>Club workshops</li>
-								<li>Build sessions</li>
-								<li>Local rocket launches</li>
-								<li>Our <u>high power rocketry</u> mentorship programs</li>
-							</ul>
-						</span>
-					</div>
-					<div class="perks-card">
-						<i class="fa fa-rocket perk-icon green fa-3x"></i>
-						<span class="info">
-							<h3>Local ERC Launches</h3>
-							<ul>
-								<li>Access to (1) <u>free</u> A or B motor</li>
-								<li>Access to our launch equipment</li>
-								<li>Members can launch up to G motors (regularly limited to D motors)</li>
-							</ul>
-						</span>
-					</div>
-					<div class="perks-card">
-						<i class="fa fa-envelope perk-icon green fa-3x"></i>
-						<span class="info">
-							<h3>Exclusive Contacts</h3>
-							<ul>
-								<li>Receive club newsletters, launch dates, etc.</li>
-								<li>GoogleGroup access to directly interact with other members</li>
-								<li>Join our discussions during our monthly meetings & AGM</li>
-							</ul>
-						</span>
-					</div>
-					<div class="perks-card">
-						<i class="fa fa-percent perk-icon green fa-3x"></i>
-						<span class="info">
-							<h3>Reduced Launch Fees</h3>
-							<ul>
-								<li>Local ERC fees are waived for members (regularly $5.00)</li>
-								<li>Fire & Ice fees are $20 for members (regularly $25.00)</li>
-							</ul>
-						</span>
-					</div>
-					<div class="perks-card">
-						<i class="fa fa-tags perk-icon green fa-3x"></i>
-						<span class="info">
-							<h3>Discounts At</h3>
-							<ul>
-								<li><a href="www.allrockets.ca">The Canadian Rocket Store</a> - Get 5% off your orders</li>
-							</ul>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row blue bulletin">
-					<h2>Membership Application and Fee</h2>
-					<div class="event-card membership-card">
-						<h4 style="color: #8EB92B">Annual</h4>
-						<p>&nbsp; Adult (18+): $30</p>
-						<p>&nbsp; Youth (17 and under): $15</p>
-						
-						<h4 style="margin-top: 0.8rem; color: #8EB92B;">Additional Memberships</h4>
-						<p style="font-size: 0.8rem">**Purchasing multiple memberships within the same household, applies the following discounts** </p>
-						<p>&nbsp; Adult (18+): $20</p>
-						<p>&nbsp; Youth (17 and under): $10</p>
-					</div>
-					<p style="margin-top: 0.8rem">Please click the button below to download our application form. Once completed, please email the form back to: <a style="color: #8EB92B; font-weight: 500" href="mailto:erc@edmontonrocketry.net"> our staff here</a></p>
-					<!-- To Do in the future, create an online form that submits to whatever provider you have chosen -->
-					<a class="btn green" href="https://drive.google.com/file/d/1MH6ZkeS0ewM_ellMKI95u577h292VLlD/view">
-						<i class="fa fa-download"></i> View Form
-					</a>
-					<br/>
-					
-				</div>
-	</main>
-	<footer class="green">
-		<a href="https://www.facebook.com/EdmontonRocketryClub/"><i class="fab fa-facebook fa-4x" style="color:#fff"></i></a>
-	</footer>
-</body>
+  <head>
+    <!-- Site Descriptors -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A membership tool developed for the ERC"
+    />
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="js/html5shiv.js"></script> -->
+    <!-- Style imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="icon" href="img/favicon.png" />
+    <!--Icon in tab-->
+    <title>Membership Info & Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="index.html"
+          ><img class="logo" src="img/ErcLogo-White.png" alt="ERC logo"
+        /></a>
+        <input type="checkbox" id="nav-check" />
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul>
+          <li><a href="index.html">View Events</a></li>
+          <li><a class="current" href="membership.html">Membership</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="check-in.html">Check In</a></li>
+        </ul>
+      </div>
+      <div class="banner launch-banner">
+        <img class="logo" src="img/ErcLogo-White.png" alt="ERC logo" />
+        <p>
+          Interested in flying model rockets with us? Take a look at what it
+          takes to become an ERC member
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <h2 class="highlight-text">
+            Why join the <br />Edmonton Rocketry Club?
+          </h2>
+          <p class="dark-text">
+            We offer our members some really cool perks! Take a look at some of
+            the awesome things that come with joining the ERC.
+          </p>
+          <button class="btn btn-secondary blue">
+            <i class="fa fa-user-plus icon"></i> View Application
+          </button>
+          <!-- Add JS to make this scroll to the bottom -->
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="perks-card">
+              <!-- Fix this astronaut icon -->
+              <i class="fa fa-user-astronaut perk-icon green fa-3x"></i>
+              <span class="info">
+                <h3>Attend</h3>
+                <ul>
+                  <li>Club workshops</li>
+                  <li>Build sessions</li>
+                  <li>Local rocket launches</li>
+                  <li>Our <u>high power rocketry</u> mentorship programs</li>
+                </ul>
+              </span>
+            </div>
+            <div class="perks-card">
+              <i class="fa fa-rocket perk-icon green fa-3x"></i>
+              <span class="info">
+                <h3>Local ERC Launches</h3>
+                <ul>
+                  <li>Access to (1) <u>free</u> A or B motor</li>
+                  <li>Access to our launch equipment</li>
+                  <li>
+                    Members can launch up to G motors (regularly limited to D
+                    motors)
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <div class="perks-card">
+              <i class="fa fa-envelope perk-icon green fa-3x"></i>
+              <span class="info">
+                <h3>Exclusive Contacts</h3>
+                <ul>
+                  <li>Receive club newsletters, launch dates, etc.</li>
+                  <li>
+                    GoogleGroup access to directly interact with other members
+                  </li>
+                  <li>
+                    Join our discussions during our monthly meetings & AGM
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <div class="perks-card">
+              <i class="fa fa-percent perk-icon green fa-3x"></i>
+              <span class="info">
+                <h3>Reduced Launch Fees</h3>
+                <ul>
+                  <li>
+                    Local ERC fees are waived for members (regularly $5.00)
+                  </li>
+                  <li>
+                    Fire & Ice fees are $20 for members (regularly $25.00)
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <div class="perks-card">
+              <i class="fa fa-tags perk-icon green fa-3x"></i>
+              <span class="info">
+                <h3>Discounts At</h3>
+                <ul>
+                  <li>
+                    <a href="www.allrockets.ca">The Canadian Rocket Store</a> -
+                    Get 5% off your orders
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row blue bulletin" style="margin-bottom: -1rem">
+        <h2>Membership Application and Fee</h2>
+        <div class="event-card membership-card">
+          <h4 style="color: #a1ce37">Annual</h4>
+          <p>&nbsp; Adult (18+): $30</p>
+          <p>&nbsp; Youth (17 & under): $15</p>
+
+          <h4 style="margin-top: 0.8rem; color: #a1ce37">
+            Additional Memberships
+          </h4>
+          <p style="font-size: 0.8rem">
+            **Purchasing multiple memberships within the same household, applies
+            a discount**
+          </p>
+          <p>&nbsp; Adult (18+): $20</p>
+          <p>&nbsp; Youth (17 & under): $10</p>
+        </div>
+        <p style="margin-top: 1rem">
+          Please download our application form below. Once completed, please
+          email the form back to:
+          <a
+            style="color: #a1ce37; font-weight: 500"
+            href="mailto:erc@edmontonrocketry.net"
+          >
+            our staff here</a
+          >
+        </p>
+        <!-- To Do in the future, create an online form that submits to whatever provider you have chosen -->
+        <a
+          class="btn green"
+          href="https://drive.google.com/file/d/1MH6ZkeS0ewM_ellMKI95u577h292VLlD/view"
+        >
+          <i class="fa fa-download"></i> View Form
+        </a>
+        <br />
+      </div>
+    </main>
+    <footer class="green">
+      <a href="https://www.facebook.com/EdmontonRocketryClub/"
+        ><i class="fab fa-facebook fa-4x" style="color: #fff"></i
+      ></a>
+    </footer>
+  </body>
 </html>
