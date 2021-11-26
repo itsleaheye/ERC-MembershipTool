@@ -233,6 +233,13 @@ input[type="text"] {
 }
 
 /*Btn Styles*/
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  max-width: 80%;
+}
 .icon {
   margin-right: 0.8em;
 }
