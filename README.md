@@ -25,11 +25,11 @@ Build Pages
 - [x] Blog
 - [x] Check in dashboard
 - [ ] Member
-- [ ] Add member
+- [ ] Add member (future update)
 - [ ] Form processing page for new members (future update?, tied to the add member page)
 - [ ] Admin Panel (future update?)
 
 Responsive Views
 - [x] Mobile
-- [ ] Tablet (IMPORTANT!!! Used at launch events for check in feature)
-- [ ] Desktop
+- [x] Tablet (IMPORTANT!!! Used at launch events for check in feature)
+- [x] Desktop
