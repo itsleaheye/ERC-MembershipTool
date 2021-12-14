@@ -15,13 +15,14 @@
 - [ ] Setup membership check in to compare passed ID with existing IDs in the system
 - [ ] Image compression and optimization
 - [x] Collapsable event detail cards
-- [ ] Favicon setup
+- [x] Favicon setup
+- [x] Javascript multiple image gallery support for a single page
  
 Build Pages
 - [x] Membership Info
 - [x] Index and Event
 - [x] About Us
-- [ ] Blog
+- [x] Blog
 - [x] Check in dashboard
 - [ ] Member
 - [ ] Add member
