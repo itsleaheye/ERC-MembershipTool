@@ -360,7 +360,7 @@ a.button {
   display: block;
 }
 
-/*card stylings*/
+/*Card stylings*/
 /*Event Cards*/
 .event-card {
   background-color: #1b6a85;
@@ -382,6 +382,7 @@ a.button {
   padding: 0.8rem;
   text-align: center !important;
   display: block;
+  margin-top: 2em;
 }
 /*Perks Cards*/
 .perks-card {
@@ -404,7 +405,6 @@ a.button {
 }
 /*Blog Cards*/
 .blog-post-card {
-  /* position:relative; */
   background-color: #f0f0f0;
   border-radius: 8px;
   padding: 0.8rem;
@@ -419,7 +419,7 @@ a.button {
   border-radius: 8px;
 }
 
-/*column stylings*/
+/*Column stylings*/
 .col {
   width: 100%;
   align-items: flex-start;
@@ -432,4 +432,142 @@ a.button {
 }
 .info-col {
   width: 85%;
+}
+
+/* Responsive Design - Tablets*/
+@media only screen and (min-width: 800px) {
+  /*Navigation Toggle to Full Screen*/
+  .nav label {
+    display: none;
+  }
+  .nav ul {
+    top: 0.5em;
+    width: auto !important;
+    visibility: visible;
+    right: 0;
+    left: auto;
+  }
+  .nav ul,
+  .nav ul li,
+  .nav ul li a {
+    background-color: #095169;
+    font-size: 1rem;
+  }
+  .nav li,
+  .nav ul li a {
+    width: auto;
+    float: left;
+    margin: 0 1rem 0 1rem;
+    padding: 0.3rem 0 0 0;
+  }
+  .nav li,
+  a:hover {
+    color: #a1ce37;
+  }
+  .current {
+    color: #a1ce37 !important;
+    background-color: #095169 !important;
+  }
+
+  /* Banners scale up */
+  .banner {
+    min-height: 250px;
+  }
+  .banner .logo {
+    max-width: 350px;
+  }
+  .bulletin {
+    flex-direction: column;
+  }
+
+  /* Column Adjustments */
+  .col {
+    width: 60%;
+  }
+  .info-col {
+    width: 90%;
+  }
+  .action-col {
+    width: 10%;
+  }
+  .perks-col {
+    width: 90% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .perks-card,
+  .blog-post-card {
+    width: 46%;
+    margin: 1em;
+    min-height: 300px;
+  }
+  .perk-icon {
+    margin-top: 0.3em;
+  }
+
+  /* Other */
+  .dark-text,
+  p,
+  .membership-card {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn,
+  input {
+    max-width: 250px !important;
+    margin: 0 auto;
+  }
+  .membership-card {
+    min-width: 600px;
+  }
+  .membership-card p {
+    max-width: 400px;
+  }
+}
+
+/* Responsive Design - Tablets*/
+@media only screen and (min-width: 1000px) {
+  /* Banner adjustments */
+  .banner {
+    background-position: top;
+  }
+  .main-banner {
+    min-height: 300px;
+  }
+
+  /* Column Adjustments */
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .col {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+  }
+  .perks-col {
+    max-width: 800px;
+  }
+  .perks-card {
+    width: 30%;
+    min-height: 375px;
+  }
+  .blog-row,
+  .check-row {
+    flex-direction: row;
+  }
+
+  .check-row .col {
+    width: 45%;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  /* Other */
+  .btn {
+    margin-top: 1em;
+  }
 }
