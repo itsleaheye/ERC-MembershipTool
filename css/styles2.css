@@ -555,7 +555,9 @@ a.button {
   .check-row {
     flex-direction: row;
   }
-
+  .blog-post-card {
+    max-width: 650px;
+  }
   .check-row .col {
     width: 45%;
     margin-right: 1em;
