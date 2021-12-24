@@ -23,10 +23,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="js/html5shiv.js"></script>
+    <!-- Firebase Config File Import -->
+    <script src="js/config.js"></script>
     <!-- Style imports -->
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/favicon.png" />
     <!--Icon in tab-->
     <title>Member Check In</title>
@@ -81,7 +82,10 @@
                   placeholder="Your Member Id..."
                 />
               </span>
-              <button class="btn btn-primary green" type="submit">
+              <button
+                class="btn btn-primary green"
+                onclick="loadMember('memberId')"
+              >
                 <i class="fa fa-rocket icon"></i> Check In
               </button>
             </form>
@@ -112,5 +116,33 @@
         ><i class="fab fa-facebook fa-4x" style="color: #fff"></i
       ></a>
     </footer>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCUkrg8V2jEiEJLJXDc13fw-xq91ycOgLw",
+        authDomain: "edmontonrocketryclub.firebaseapp.com",
+        databaseURL: "https://edmontonrocketryclub-default-rtdb.firebaseio.com",
+        projectId: "edmontonrocketryclub",
+        storageBucket: "edmontonrocketryclub.appspot.com",
+        messagingSenderId: "809231412301",
+        appId: "1:809231412301:web:74abb7eb22666dcc220004",
+        measurementId: "G-SHCVKN59R6",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <script>
+      function loadMember(memberId) {
+        window.location.href = "/member?id=" + memberId;
+      }
+    </script>
   </body>
 </html>
