@@ -530,7 +530,7 @@ a.button {
   }
 }
 
-/* Responsive Design - Tablets*/
+/* Responsive Design - Full Screen*/
 @media only screen and (min-width: 1000px) {
   .main-banner,
   .about-banner {
@@ -555,6 +555,7 @@ a.button {
   .perks-card {
     width: 30%;
     min-height: 375px;
+    max-width: 230px;
   }
   .blog-row,
   .check-row {
@@ -575,5 +576,12 @@ a.button {
   }
   .green p {
     max-width: 350px;
+  }
+  /* Large Resolutions */
+  @media only screen and (min-width: 1375px) {
+    .perks-col {
+      max-width: 1375px;
+      width: 100% !important;
+    }
   }
 }
